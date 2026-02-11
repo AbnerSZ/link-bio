@@ -1,47 +1,72 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <title>Link na Bio</title>
+<style>
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(180deg, #0e2a3a, #123c56);
+    color: #f2f2f2;
+  }
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-    }
+  .container {
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 35px 20px;
+    text-align: center;
+  }
 
-    .container {
-      max-width: 400px;
-      margin: 40px auto;
-      text-align: center;
-      background: #ffffff;
-      padding: 20px;
-      border-radius: 10px;
-    }
+  .avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #ffffff;
+    margin: 0 auto 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.35);
+  }
 
-    .btn {
-      display: block;
-      padding: 15px;
-      margin: 10px 0;
-      background: #000000;
-      color: #ffffff;
-      text-decoration: none;
-      border-radius: 8px;
-      font-weight: bold;
-    }
-  </style>
-</head>
+  .avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
-<body>
+  h1 {
+    margin: 12px 0 6px;
+    font-size: 26px;
+    letter-spacing: 1px;
+  }
 
-  <div class="container">
-    <h1>Seu Nome ou Negócio</h1>
-    <p>Uma frase curta sobre você</p>
+  p {
+    margin: 0 0 32px;
+    font-size: 15px;
+    opacity: 0.85;
+  }
 
-    <a class="btn" href="https://wa.me/55999999999">WhatsApp</a>
-    <a class="btn" href="https://instagram.com">Instagram</a>
-    <a class="btn" href="https://maps.google.com">Endereço</a>
-  </div>
+  .btn {
+    background: #f2f2f2;
+    color: #0e2a3a;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 17px;
+    margin: 16px 0;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: bold;
+    box-shadow: 0 5px 12px rgba(0,0,0,0.25);
+    transition: all 0.2s ease;
+  }
 
-</body>
-</html>
+  .btn i {
+    font-size: 20px;
+    color: #d18b47;
+  }
+
+  .btn:hover {
+    transform: scale(1.03);
+  }
+</style>
